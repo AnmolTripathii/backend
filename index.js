@@ -21,6 +21,7 @@ cloudinary.config({
 app.use(express.json());
 const corsOptions = {
     origin: 'https://e-commerce-ncd7.vercel.app', // Replace this with your domain
+methods:["GET","POST","PUT","DELETE"],
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   };
   
